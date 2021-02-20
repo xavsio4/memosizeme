@@ -30,6 +30,19 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
+   // customize loading bar
+  loading: {
+    color: 'blue',
+    height: '5px'
+  },
+
+  // loading indicator
+  loadingIndicator: {
+    name: 'circle',
+    color: '#3B8070',
+    background: 'dark'
+  },
    
    /**
    * Bootstrap settings
@@ -79,6 +92,8 @@ export default {
             set: '@fortawesome/free-solid-svg-icons',
             icons: [
               'faPen',
+              'faExclamationCircle',
+              'faQuestionCircle',
               'faCog',
               'faBicycle',
               'faChild',

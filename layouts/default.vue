@@ -2,24 +2,28 @@
   <div>
       <b-navbar toggleable="lg" type="dark" :sticky="true" variant="dark">
       <b-navbar-brand href="#"><h3>MemoSizeMe</h3></b-navbar-brand>
-      <b-navbar-nav>
-        <b-nav-item href="/"><fa :icon="['fas', 'child']" /> Body</b-nav-item>
-        <b-nav-item href="/bike"
+      <b-navbar-nav class="float-left">
+        <b-nav-item to="/"><fa :icon="['fas', 'child']" /> Body</b-nav-item>
+        <b-nav-item to="/bike"
           ><fa :icon="['fas', 'bicycle']" /> Bike</b-nav-item
         >
       </b-navbar-nav>
-      <b-navbar-nav class="pull-right">
-        <b-nav-item-dropdown no-caret>
+      <b-navbar-nav class="float-right">
+         <b-nav-item class="float-right" to="/about"><fa :icon="['fas', 'question-circle']" /> About</b-nav-item>
+        <b-nav-item-dropdown class="float-right" no-caret>
           <template #button-content>
-            <fa :icon="['fas', 'cog']" />
+            <fa :icon="['fas', 'cog']" /> Settings
           </template>
           <b-dropdown-form> 
-            <div>
-              cm<b-form-checkbox v-model="checked" name="check-button" switch></b-form-checkbox>inch
+            <h6>Body metric</h6> 
+            <div class="switcher">
+             
+              <div>cm &nbsp;</div> <b-form-checkbox v-model="checked" name="check-button" switch></b-form-checkbox><div>inch</div>
               </b-form-checkbox>
             </div>
-            <div>
-              cm<b-form-checkbox v-model="checked_bike" name="check-button" switch></b-form-checkbox>inch
+            <h6>Bike metric</h6>
+            <div class="switcher">
+              <div>cm &nbsp;</div><b-form-checkbox v-model="checked_bike" name="check-button" switch></b-form-checkbox><div>inch</div>
               </b-form-checkbox>
             </div>
             </b-dropdown-form
@@ -71,7 +75,10 @@ html {
   box-sizing: border-box;
 }
 
-
+.switcher {
+  display: flex;
+  margin:-9px 0 9px 0;
+}
 
 .dropdow-menu li {
   background-color:#202124!important ;
