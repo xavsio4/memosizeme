@@ -144,6 +144,9 @@ export default {
     lang: 'en',
     description:'Record your sizes locally. No account. Free. Data stays Local.',
     useWebmanifestExtension: false
+    },
+    meta: {
+    appleMobileWebAppCapable: true,
   }
 },
 
