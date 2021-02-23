@@ -1,5 +1,6 @@
 <template>
   <div>
+    <header>
       <b-navbar toggleable="lg" type="dark" :sticky="true" variant="dark">
       <b-navbar-brand href="#"><h3>MemoSizeMe</h3></b-navbar-brand>
       <b-navbar-nav class="float-left">
@@ -26,11 +27,19 @@
               <div>cm &nbsp;</div><b-form-checkbox v-model="checked_bike" name="check-button" switch></b-form-checkbox><div>inch</div>
               </b-form-checkbox>
             </div>
+            <hr>
+            <h6>Lang</h6>
+            <ul class="list-inline list-unstyled">
+              <li class="list-inline-item"><b-badge>en</b-badge></li>
+              <li class="list-inline-item"><b-badge>fr</b-badge></li>
+              <li class="list-inline-item"><b-badge>es</b-badge></li>
+              </ul>
             </b-dropdown-form
           >
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-navbar>
+    </header>
     <Nuxt />
     
   </div>
@@ -75,6 +84,10 @@ html {
   box-sizing: border-box;
 }
 
+header {
+  margin:0px 0 16px 0;
+}
+
 .switcher {
   display: flex;
   margin:-9px 0 9px 0;
@@ -89,6 +102,34 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.col {
+margin:6px 0;
+}
+
+.widget {
+  background-color: #000;
+  padding:8px;
+  border-radius:6px;
+  width: 324px;
+}
+
+.widget h4 {
+  margin-bottom: -14px;
+}
+
+
+input[type=number] {
+  padding-left:6px;
+  background-color: dimgray;
+  border-radius: 4px;
+  color:white;
+  font-weight: 600;
+
+  -webkit-box-flex: 1;
+  width: 25%;
+  min-width: 10%;
 }
 
 

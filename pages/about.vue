@@ -20,7 +20,7 @@
         </p>
         <h2>Progressive Web App</h2>
         <p>MemoSizeMe is a PWA, it means that when surfing the page you can add it to your
-            smartphone as if it was a native app. No need to go to the Apple o Android store for that.</p>
+            smartphone as if it was a native app. No need to go to the Apple or Android store for that.</p>
             <p>You can also add it to your desktop.</p>
             <p>You do that by clicking on this sign <img src="~/assets/pwa.jpg"/>just within the URL bar in your browser.</p>
     </b-container>

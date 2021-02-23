@@ -2,9 +2,38 @@
   <div>
   
     <b-container>
-      <h4><fa :icon="['fas', 'child']" /> &nbsp;Body</h4>
+      <h4><fa :icon="['fas', 'child']" /> &nbsp;{{ $t('body') }}</h4>
       <b-form>
         <b-row>
+          <b-col>
+            <div class="widget">
+              <h4>General</h4>
+              <hr color="#999" />
+              <b-form-group>
+                <label>Weight</label>
+                <input
+                  maxlength="3"
+                  size="6"
+                  max="10"
+                  v-model="body.weight"
+                  type="number"
+                />
+                Kg
+              </b-form-group>
+              <b-form-group>
+                <label>height</label>
+                <input
+                  maxlength="3"
+                  size="6"
+                  max="10"
+                  v-model="body.height"
+                  type="number"
+                />
+                {{metric}}
+              </b-form-group>
+            </div>
+          </b-col>
+
           <b-col>
             <div class="widget">
               <h4>Head</h4>
@@ -161,6 +190,8 @@ export default {
         leg: '',
         inseam: '',
         foot: '',
+        weight:'',
+        height:'',
         negative_flexibility: '',
         shoulders: '',
         inseam_length: '',
@@ -209,34 +240,4 @@ export default {
 </script>
 
 <style>
-header {
-  margin: 16px 0 14px 0;
-}
-
-.col {
-  margin: 6px 0;
-}
-
-.widget {
-  background-color: #000;
-  padding: 8px;
-  border-radius: 6px;
-  width: 320px;
-}
-
-.widget h4 {
-  margin-bottom: -14px;
-}
-
-input {
-  padding-left: 6px;
-  background-color: dimgray;
-  border-radius: 4px;
-  color: white;
-  font-weight: 600;
-
-  -webkit-box-flex: 1;
-  width: 25%;
-  min-width: 10%;
-}
 </style>

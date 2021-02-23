@@ -82,6 +82,8 @@ export default {
     '@nuxt/content',
     // https://github.com/nuxt-community/universal-storage-module
     '@nuxtjs/universal-storage',
+    // i18n
+    'nuxt-i18n',
     // fontawesome
     [
       'nuxt-fontawesome',
@@ -130,6 +132,35 @@ export default {
       prefix: 'memosizeme_'
     },
   },
+
+  /**
+   * I18N Configuration
+   */
+  i18n: {
+    langDir: 'lang/',
+    defaultLocale: 'en',
+    lazy: true,
+    locales: [{
+      name: 'Español',
+      code: 'es',
+      iso: 'es-ES',
+      file: 'es.js'
+    },
+    {
+      name: 'English',
+      code: 'en',
+      iso: 'en-US',
+      file: 'en.js'
+    },
+    {
+      name: 'Français',
+      code: 'fr',
+      iso: 'fr-FR',
+      file: 'fr.js'
+    }
+    ]// locales
+
+  }, // /i18N
 
   
 

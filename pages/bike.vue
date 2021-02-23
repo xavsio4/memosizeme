@@ -12,12 +12,20 @@
           <hr color="#999"/>
           <b-form-group>
             
-            <input  max="70" v-model="bike.brand" type="text" /> 
+            <input  max="80" v-model="bike.brand" type="text" /> 
             </b-form-group>
             <hr color="#999"/>
           <b-form-group>
             <label>ID Number</label>
-            <input  max="70" v-model="bike.id_number" type="text" /> 
+            <input  max="80" v-model="bike.id_number" type="text" /> 
+            </b-form-group>
+            <b-form-group>
+            <label>Frame Size</label>
+            <input maxlength="3" size="6" max="70" v-model="bike.size" type="number" /> 
+            </b-form-group>
+            <b-form-group>
+            <label>Factory weight</label>
+            <input maxlength="3" size="6" max="70" v-model="bike.wieght" type="number" /> 
             </b-form-group>
           
         </div>
@@ -38,24 +46,12 @@
 
              <b-form-group>
             <label>Tubeless ?</label>
-            <input maxlength="3" size="6" max="70" v-model="bike.wheels.tubeless" type="number" /> {{metric}}
+            <input maxlength="3" size="6" max="70" v-model="bike.wheels.tubeless" type="checkbox" /> {{metric}}
             </b-form-group>
 
             <b-form-group>
             <label>Max. Pressure</label>
-            <input maxlength="3" size="6" max="70" v-model="bike.wheels.pressure" type="number" /> {{metric}}
-            </b-form-group>
-          
-        </div>
-      </b-col>
-      
-      <b-col>
-        <div class="widget">
-          <h4>Frame Size</h4>
-          <hr color="#999"/>
-          <b-form-group>
-            
-            <input maxlength="3" size="6" max="70" v-model="bike.size" type="number" /> 
+            <input maxlength="3" size="6" max="70" v-model="bike.wheels.pressure" type="number" /> bars/psi
             </b-form-group>
           
         </div>
@@ -63,11 +59,11 @@
 
       <b-col>
         <div class="widget">
-          <h4>Id Number</h4>
+          <h4>Frame metricx</h4>
           <hr color="#999"/>
           <b-form-group>
-            <label>Head size</label>
-            <input maxlength="3" size="12" max="70" v-model="bike.id_number" type="number" /> {{metric}}
+            <label>reach</label>
+            <input maxlength="3" size="12" max="70" v-model="bike.reach" type="number" /> {{metric}}
             </b-form-group>
           
         </div>
@@ -97,6 +93,8 @@ export default {
     return {
       bike:{
         brand:'',
+        weight:'',
+        reach:'',
         wheels: {
           size:'',
           etrto:'',
@@ -147,38 +145,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-header {
-  margin:16px 0 14px 0;
-}
-
-.col {
-margin:6px 0;
-}
-
-.widget {
-  background-color: #000;
-  padding:8px;
-  border-radius:6px;
-  width: 320px;
-}
-
-.widget h4 {
-  margin-bottom: -14px;
-}
-
-input[type=number] {
-  padding-left:6px;
-  background-color: dimgray;
-  border-radius: 4px;
-  color:white;
-  font-weight: 600;
-
-  -webkit-box-flex: 1;
-  width: 25%;
-  min-width: 10%;
-}
-
-</style>
