@@ -30,7 +30,7 @@
             <hr>
             <h6>Lang</h6>
             <ul class="list-inline list-unstyled">
-              <li class="list-inline-item"><b-badge>en</b-badge></li>
+              <li class="list-inline-item"> <a href=""><b-badge>en</b-badge></a></li>
               <li class="list-inline-item"><b-badge>fr</b-badge></li>
               <li class="list-inline-item"><b-badge>es</b-badge></li>
               </ul>

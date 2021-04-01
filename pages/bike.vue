@@ -46,7 +46,7 @@
 
              <b-form-group>
             <label>Tubeless ?</label>
-            <input maxlength="3" size="6" max="70" v-model="bike.wheels.tubeless" type="checkbox" /> {{metric}}
+            <input maxlength="3" size="6" max="70" v-model="bike.wheels.tubeless" type="checkbox" />
             </b-form-group>
 
             <b-form-group>
@@ -59,7 +59,7 @@
 
       <b-col>
         <div class="widget">
-          <h4>Frame metricx</h4>
+          <h4>Frame metric</h4>
           <hr color="#999"/>
           <b-form-group>
             <label>reach</label>

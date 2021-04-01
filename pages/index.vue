@@ -129,12 +129,12 @@
               <h4>Legs</h4>
               <hr color="#999" />
               <b-form-group>
-                <label>Leg length</label>
+                <label>Foot length</label>
                 <input
                   maxlength="3"
                   size="6"
                   max="70"
-                  v-model="body.leg"
+                  v-model="body.foot"
                   type="number"
                 />
                 {{ metric }}
@@ -188,6 +188,7 @@ export default {
         chest: '',
         arm: '',
         leg: '',
+        foot: '',
         inseam: '',
         foot: '',
         weight:'',
