@@ -31,6 +31,39 @@
                 />
                 {{metric}}
               </b-form-group>
+              <b-form-group>
+                <label>waist size</label>
+                <input
+                  maxlength="3"
+                  size="6"
+                  max="70"
+                  v-model="body.waist"
+                  type="number"
+                />
+                {{ metric }}
+              </b-form-group>
+              <b-form-group>
+                <label>Chest</label>
+                <input
+                  maxlength="3"
+                  size="6"
+                  max="70"
+                  v-model="body.chest"
+                  type="number"
+                />
+                {{ metric }}
+              </b-form-group>
+              <b-form-group>
+                <label>Shoulder</label>
+                <input
+                  maxlength="3"
+                  size="6"
+                  max="70"
+                  v-model="body.shoulders"
+                  type="number"
+                />
+                {{ metric }}
+              </b-form-group>
             </div>
           </b-col>
 
@@ -50,14 +83,11 @@
                 {{ metric }}
               </b-form-group>
             </div>
-          </b-col>
-
-          <b-col>
             <div class="widget">
               <h4>Hand</h4>
               <hr color="#999" />
               <b-form-group>
-                <label>Head size</label>
+                <label>Hand size</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -68,32 +98,11 @@
                 {{ metric }}
               </b-form-group>
             </div>
-          </b-col>
-
-          <b-col>
-            <div class="widget">
-              <h4>Waist</h4>
-              <hr color="#999" />
-              <b-form-group>
-                <label>Head size</label>
-                <input
-                  maxlength="3"
-                  size="6"
-                  max="70"
-                  v-model="body.waist"
-                  type="number"
-                />
-                {{ metric }}
-              </b-form-group>
-            </div>
-          </b-col>
-
-          <b-col>
-            <div class="widget">
+             <div class="widget">
               <h4>Arm</h4>
               <hr color="#999" />
               <b-form-group>
-                <label>Arm</label>
+                <label>Arm length</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -103,26 +112,27 @@
                 />
                 {{ metric }}
               </b-form-group>
-            </div>
-          </b-col>
-
-          <b-col>
-            <div class="widget">
-              <h4>Chest</h4>
-              <hr color="#999" />
-              <b-form-group>
-                <label>Chest</label>
+               <b-form-group>
+                <label>Biceps rest</label>
                 <input
                   maxlength="3"
                   size="6"
                   max="70"
-                  v-model="body.chest"
+                  v-model="body.biceps"
+                  type="number"
+                />flex<input
+                  maxlength="3"
+                  size="6"
+                  max="70"
+                  v-model="body.bicepsflex"
                   type="number"
                 />
                 {{ metric }}
               </b-form-group>
             </div>
           </b-col>
+
+      
 
           <b-col>
             <div class="widget">
@@ -146,6 +156,28 @@
                   size="6"
                   max="70"
                   v-model="body.inseam"
+                  type="number"
+                />
+                {{ metric }}
+              </b-form-group>
+               <b-form-group>
+                <label>Thigh</label>
+                <input
+                  maxlength="3"
+                  size="6"
+                  max="70"
+                  v-model="body.thigh"
+                  type="number"
+                />
+                {{ metric }}
+              </b-form-group>
+               <b-form-group>
+                <label>Calves</label>
+                <input
+                  maxlength="3"
+                  size="6"
+                  max="70"
+                  v-model="body.calves"
                   type="number"
                 />
                 {{ metric }}
@@ -187,8 +219,11 @@ export default {
         waist: '',
         chest: '',
         arm: '',
+        biceps:'',
         leg: '',
         foot: '',
+        thigh:'',
+        calves:'',
         inseam: '',
         foot: '',
         weight:'',
