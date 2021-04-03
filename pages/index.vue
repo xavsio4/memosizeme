@@ -32,7 +32,7 @@
                 {{metric}}
               </b-form-group>
               <b-form-group>
-                <label>waist size</label>
+                <label>a. waist size</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -43,7 +43,7 @@
                 {{ metric }}
               </b-form-group>
               <b-form-group>
-                <label>Chest</label>
+                <label>b. Chest</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -54,7 +54,7 @@
                 {{ metric }}
               </b-form-group>
               <b-form-group>
-                <label>Shoulder</label>
+                <label>c. Shoulder</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -72,7 +72,7 @@
               <h4>Head</h4>
               <hr color="#999" />
               <b-form-group>
-                <label>Head size</label>
+                <label>d. Head size</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -87,7 +87,7 @@
               <h4>Hand</h4>
               <hr color="#999" />
               <b-form-group>
-                <label>Hand size</label>
+                <label>e. palm size</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -97,12 +97,23 @@
                 />
                 {{ metric }}
               </b-form-group>
+              <b-form-group>
+                <label>f. hand length</label>
+                <input
+                  maxlength="3"
+                  size="6"
+                  max="70"
+                  v-model="body.handlength"
+                  type="number"
+                />
+                {{ metric }}
+              </b-form-group>
             </div>
              <div class="widget">
               <h4>Arm</h4>
               <hr color="#999" />
               <b-form-group>
-                <label>Arm length</label>
+                <label>g. Arm length</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -113,7 +124,7 @@
                 {{ metric }}
               </b-form-group>
                <b-form-group>
-                <label>Biceps rest</label>
+                <label>h. Biceps rest</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -139,7 +150,7 @@
               <h4>Legs</h4>
               <hr color="#999" />
               <b-form-group>
-                <label>Foot length</label>
+                <label>i. Foot length</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -150,7 +161,7 @@
                 {{ metric }}
               </b-form-group>
               <b-form-group>
-                <label>Inseam</label>
+                <label>j. Inseam</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -161,7 +172,7 @@
                 {{ metric }}
               </b-form-group>
                <b-form-group>
-                <label>Thigh</label>
+                <label>k. Thigh</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -172,7 +183,7 @@
                 {{ metric }}
               </b-form-group>
                <b-form-group>
-                <label>Calves</label>
+                <label>l. Calves</label>
                 <input
                   maxlength="3"
                   size="6"
@@ -216,6 +227,7 @@ export default {
       body: {
         head: '',
         hand: '',
+        handlength: '',
         waist: '',
         chest: '',
         arm: '',
