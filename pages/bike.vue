@@ -69,6 +69,23 @@
         </div>
       </b-col>
 
+      <b-col>
+        <div class="widget">
+          <h4>Transmission</h4>
+          <hr color="#999"/>
+          <b-form-group>
+            <label>Front</label>
+            <input maxlength="3" size="12" max="70" v-model="bike.front_transmission" type="text" placeholder="46-30" /> {{metric}}
+            </b-form-group>
+
+            <b-form-group>
+            <label>Rear</label>
+            <input maxlength="3" size="12" max="70" v-model="bike.rear_transmission" type="text" placeholder="11-34" /> {{metric}}
+            </b-form-group>
+          
+        </div>
+      </b-col>
+
       
     </b-row>
     </b-form>
@@ -95,6 +112,8 @@ export default {
         brand:'',
         weight:'',
         reach:'',
+        rear_transmission:'',
+        front_transmission:'',
         wheels: {
           size:'',
           etrto:'',
