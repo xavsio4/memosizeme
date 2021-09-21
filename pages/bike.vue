@@ -14,7 +14,12 @@
               <hr color="#999" />
               <b-form-group>
                 <label>ID Number</label>
-                <input max="80" v-model="bike.id_number" type="text" />
+                <input
+                  max="80"
+                  size="20"
+                  v-model="bike.id_number"
+                  type="text"
+                />
               </b-form-group>
               <b-form-group>
                 <label>Frame Size</label>
@@ -27,7 +32,8 @@
                 />
               </b-form-group>
               <b-form-group>
-                <label>Factory weight</label>
+                <label>Factory weight </label>
+
                 <input
                   maxlength="3"
                   size="6"
@@ -35,6 +41,8 @@
                   v-model="bike.wieght"
                   type="number"
                 />
+                Kg
+                <b-form-text>ex 11.7kg</b-form-text>
               </b-form-group>
             </div>
           </b-col>
@@ -123,7 +131,7 @@
                   type="text"
                   placeholder="46-30"
                 />
-                {{ metric }}
+                Teeth
               </b-form-group>
 
               <b-form-group>
@@ -136,7 +144,7 @@
                   type="text"
                   placeholder="11-34"
                 />
-                {{ metric }}
+                Teeth
               </b-form-group>
             </div>
           </b-col>

@@ -19,12 +19,12 @@
             <h6>Body metric</h6> 
             <div class="switcher">
              
-              <div>cm &nbsp;</div> <b-form-checkbox v-model="checked" name="check-button" switch></b-form-checkbox><div>inch</div>
+              <div>inch &nbsp;</div> <b-form-checkbox v-model="checked" name="check-button" switch></b-form-checkbox><div>cm</div>
               </b-form-checkbox>
             </div>
             <h6>Bike metric</h6>
             <div class="switcher">
-              <div>cm &nbsp;</div><b-form-checkbox v-model="checked_bike" name="check-button" switch></b-form-checkbox><div>inch</div>
+              <div>inch &nbsp;</div><b-form-checkbox v-model="checked_bike" name="check-button" switch></b-form-checkbox><div>cm</div>
               </b-form-checkbox>
             </div>
             <hr>

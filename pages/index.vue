@@ -1,6 +1,5 @@
 <template>
   <div>
-  
     <b-container>
       <h4><fa :icon="['fas', 'child']" /> &nbsp;{{ $t('body') }}</h4>
       <b-form>
@@ -29,7 +28,7 @@
                   v-model="body.height"
                   type="number"
                 />
-                {{metric}}
+                {{ metric }}
               </b-form-group>
               <b-form-group>
                 <label>a. waist size</label>
@@ -109,7 +108,7 @@
                 {{ metric }}
               </b-form-group>
             </div>
-             <div class="widget">
+            <div class="widget">
               <h4>Arm</h4>
               <hr color="#999" />
               <b-form-group>
@@ -123,7 +122,7 @@
                 />
                 {{ metric }}
               </b-form-group>
-               <b-form-group>
+              <b-form-group>
                 <label>h. Biceps rest</label>
                 <input
                   maxlength="3"
@@ -131,7 +130,8 @@
                   max="70"
                   v-model="body.biceps"
                   type="number"
-                />flex<input
+                />
+                flex<input
                   maxlength="3"
                   size="6"
                   max="70"
@@ -142,8 +142,6 @@
               </b-form-group>
             </div>
           </b-col>
-
-      
 
           <b-col>
             <div class="widget">
@@ -171,7 +169,7 @@
                 />
                 {{ metric }}
               </b-form-group>
-               <b-form-group>
+              <b-form-group>
                 <label>k. Thigh</label>
                 <input
                   maxlength="3"
@@ -182,7 +180,7 @@
                 />
                 {{ metric }}
               </b-form-group>
-               <b-form-group>
+              <b-form-group>
                 <label>l. Calves</label>
                 <input
                   maxlength="3"
@@ -222,8 +220,8 @@ import { mapState } from 'vuex'
 export default {
   data() {
     return {
-      checked:true,
-      
+      checked: true,
+
       body: {
         head: '',
         hand: '',
@@ -231,15 +229,15 @@ export default {
         waist: '',
         chest: '',
         arm: '',
-        biceps:'',
+        biceps: '',
         leg: '',
         foot: '',
-        thigh:'',
-        calves:'',
+        thigh: '',
+        calves: '',
         inseam: '',
         foot: '',
-        weight:'',
-        height:'',
+        weight: '',
+        height: '',
         negative_flexibility: '',
         shoulders: '',
         inseam_length: '',
@@ -255,8 +253,7 @@ export default {
       metric: (state) => {
         return state.body_metric
       },
-      
-    })
+    }),
   },
   methods: {
     save() {
@@ -287,5 +284,4 @@ export default {
 }
 </script>
 
-<style>
-</style>
+<style></style>
